@@ -56,7 +56,7 @@
                 if ($result = $conn->query($sql)) {
                     while ($row = $result->fetch_row()) {
                         $category = $row[0];
-                        echo "<a href=\"?category=$category\">$category</a><br>";
+                        echo "<a href=\"?category=$category\">$category</a>";
                     }
                 }
             ?>
@@ -82,7 +82,6 @@
                                             echo '<button type="submit" value="' . $row['id'] . '" >Koupit</button>';
                                     echo '</form>';
                                 echo "</div>";
-                                echo "<br>";
                             }
                         }
                     }
