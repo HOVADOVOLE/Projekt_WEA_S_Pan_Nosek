@@ -5,39 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css.css">
-    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="stylee.css">
+    <title>Nákupní stránka</title>
 </head>
 <body>
-    <div class="backgroundos">    <!--Container abych mohl používat % míst vw/vh-->
+    <div class="backgroundos"><!--Container abych mohl používat % míst vw/vh-->
         <div class="header-container">
-            <a href="index.php"><h1>Obchod</h1></a>
+            <a href="index.php"><h1>OBCHOD</h1></a>
         </div>
         <div class="navbar-container">  <!--Container pro navbar + link na shoplist-->
             <div class="navbar-container-left"> <!--Container pro navbar!!-->
-                <ul class="nav" style="color:black;">
-                    <li class="nav-item" style="color:black;">
-                        <a class="nav-link" id='linkyHore' href="#">O nás</a>
-                    </li>
-                    <li class="nav-item"style="color:black;">
-                        <a class="nav-link" id='linkyHore' href="#">Kdo je David Vinš?!</a>
-                    </li>
-                    <li class="nav-item"style="color:black;">
-                        <a class="nav-link" id='linkyHore' href="#">Linkos</a>
-                    </li>
-                    <li class="nav-item" style="color:black;">
-                        <a class="nav-link" id='linkyHore' href="#">Disabled</a>
-                    </li>
-                    <li class="nav-item" style="color:black;">
-                        <a class="nav-link" id='linkyHore' href="#">Disabled</a>
-                    </li>
-                </ul> 
-            </div>
-            <div class="navbar-container-right">    <!--Container pro link na shoplist-->
-                <a class="nav-link" href="index.php">
-                    <img src="https://img.icons8.com/ios/50/000000/shopping-cart--v1.png"/>
-                </a>
+                <div class="odkazy">
+                    <ul class="nav" id="bar" style="color:black;">
+                        <li class="nav-item" style="color:black;">
+                            <a class="nav-link" id='linkyHore' href="#">O nás</a>
+                        </li>
+                        <li class="nav-item"style="color:black;">
+                            <a class="nav-link" id='linkyHore' href="#">Kdo je David Vinš?!</a>
+                        </li>
+                        <li class="nav-item"style="color:black;">
+                            <a class="nav-link" id='linkyHore' href="#">Linkos</a>
+                        </li>
+                        <li class="nav-item" style="color:black;">
+                            <a class="nav-link" id='linkyHore' href="#">Disabled</a>
+                        </li>
+                        <li class="nav-item" style="color:black;">
+                            <a class="nav-link" id='linkyHore' href="#">Disabled</a>
+                        </li>
+                    </ul> 
+                </div>
+                <div class="kosikDiv">
+                    <a class="nav-link" id="kosik" href="shop-list.php">
+                        <img src="https://img.icons8.com/ios/50/000000/shopping-cart--v1.png"/>
+                    </a>
+                </div>
             </div>
         </div>
         
